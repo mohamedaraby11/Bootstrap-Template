@@ -501,3 +501,14 @@ animation: scroll 3s infinite;
 .carousel-indicators button.active{
     width: 40px !important;
 } 
+h4::after {
+    content: '';
+    width: 50px;
+    position: absolute;
+    height: 4px;
+    background-color: orange;
+    transform: translateX(-50%);
+    transition: all 1s;
+    left: 50%;
+    right: 50%;
+}
