@@ -512,3 +512,49 @@ h4::after {
     left: 50%;
     right: 50%;
 }
+
+
+.work-item img {
+    width: 100%;
+    transition: all 1s;
+
+}
+
+.work-item{
+    position: relative;
+    overflow: hidden;
+}
+.work-layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.685);
+    opacity: 0;
+    transition: all 1s;
+}
+.work-item:hover .work-layer{
+    opacity: 1;
+}
+.work-item:hover img {
+transform: scale(1.2);}
+
+.work-content{
+    position: absolute;
+    top: 100%;
+    transition: all 1s;
+    transform: translateY(-50%);
+
+}
+
+.work-item:hover .work-content{
+    top: 50%;
+}
+
+.nav-pills .nav-link.active{
+    background-color: #e65f78;
+}
+
+.modal-body img {
+    width: 100%;
+}
